@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #eff1ed;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #145858;
+    color: whitesmoke;
+}
+
+.nav-links a {
+    color: whitesmoke;
+}
+
+.nav-links a:hover {
+    color: #145858;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.menu li:hover {
+    color: #145858;
+    background-color: #cbe0ca;
+    transition: 0.2s ease;
+    border-radius: 5px;
+}
+
+.menu li:hover a {
+    color: inherit;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+
+}
+
+.profile {
+    margin-top: 30px;
+    padding: 0%;
+    width: 15rem;
+    border-radius: 50%;
+    transform: rotate(-8deg);
+    border: #717744 2px solid;
+    user-select: none;
+    box-shadow: 5px 5px #cbe0ca;
+}
+
+.whoiam {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1B1B3A;
+}
+
+.greetings {
+    margin-top: 10px;
+}
+
+.buttons {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redirect {
+    margin-top: 10vh;
+    background-color: #f7b31b;
+    width: 230px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: #eff1ed;
+    border: none;
+    box-shadow: 5px 5px #cbe0ca;
+}
+
+.redirect:hover {
+    background-color: #c02f0b;
+}
+
+.footer {
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    background-color: #198d8d;
+    width: 100%;
+    color: whitesmoke;
+}
+.footer h1{
+    padding-left: 50px;
+}
+.contacts a {
+    flex-direction: row;
+    color: whitesmoke;
+    padding-left: 50px;
+}
+
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffff;
+    width: 35vh;
+    display: flex;
+    flex-direction: column;
+    border: #145858 1px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px #cbe0ca;
+    margin-top: 20px;
+}
+
+.card-description{
+
+    padding: -5px -15px;
+    background-color: #eff1ed;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    
+
+}
+.logo-cards {
+    padding-top: 5px;
+    width: 20vh;
+    align-self: center;
+}
+.card-images{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+}
+@media(max-width: 550px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #145858;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        z-index: 20;
+    }
+
+
+    .menu li:hover a {
+        color: inherit;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #cbe0ca;
+        transition: 0.2s ease;
+        text-align: center;
+        color: #145858;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
